@@ -6,8 +6,8 @@ RSpec.describe Gear do
   describe '#ratio' do
     it 'finds  the ratio' do
       aggregate_failures do
-        expect(Gear.new(52, 11, 26, 1.5).ratio).to eq(4.7272727272727275)
-        expect(Gear.new(30, 27, 26, 1.5).ratio).to eq(1.1111111111111112)
+        expect(Gear.new(52, 11, 1, 1).ratio).to eq(4.7272727272727275)
+        expect(Gear.new(30, 27, 1, 1).ratio).to eq(1.1111111111111112)
       end
     end
   end
