@@ -9,3 +9,7 @@ Metrics/LineLength:
 Style/MixinUsage:
   Exclude:
     - 'spec/lib/**/*.rb'
+
+Metrics/BlockLength:
+  ExcludedMethods:
+    - describe
