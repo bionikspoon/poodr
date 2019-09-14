@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'chapter_07/bicycle.rb'
+require 'chapter_06/bicycle.rb'
 
-include Chapter07
+include Chapter06
 
 describe Bicycle do
   describe RoadBike do

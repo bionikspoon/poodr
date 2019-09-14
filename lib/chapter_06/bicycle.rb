@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Chapter07
+module Chapter06
   class Bicycle
     attr_reader :size, :chain, :tire_size
 
