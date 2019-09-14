@@ -5,3 +5,7 @@ Style/Documentation:
 
 Metrics/LineLength:
   Max: 120
+
+Style/MixinUsage:
+  Exclude:
+    - 'spec/lib/**/*.rb'

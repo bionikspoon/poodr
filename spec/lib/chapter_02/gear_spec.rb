@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
-require '02/gear.rb'
+require 'chapter_02/gear.rb'
 
-RSpec.describe Gear do
+include Chapter02
+
+describe Gear do
   describe '#ratio' do
     it 'finds  the ratio' do
       aggregate_failures do
@@ -22,7 +24,7 @@ RSpec.describe Gear do
   end
 end
 
-RSpec.describe Wheel do
+describe Wheel do
   describe '#diameter' do
     it 'calculates the diameter' do
       aggregate_failures do
