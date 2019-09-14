@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
-module Chapter03
+module Chapter07
   class Bicycle
     attr_reader :size, :chain, :tire_size
 
     def initialize(**opts)
       @size = opts[:size]
-      @chain = opts[chain] || default_chain
-      @tire_size = opts[chain] || default_tire_size
+      @chain = opts[:chain] || default_chain
+      @tire_size = opts[:chain] || default_tire_size
+    end
+
+    def default_tire_size
+      raise NotImplementedError, "#{self.class} must implement 'default_tire_size'"
     end
 
     def default_chain
       '11-speed'
-    end
-
-    def default_tire_size
-      '23'
     end
 
     def spares
@@ -29,6 +29,10 @@ module Chapter03
     def initialize(**opts)
       super
       @tape_color = opts[:tape_color]
+    end
+
+    def default_tire_size
+      '23'
     end
 
     def spares
